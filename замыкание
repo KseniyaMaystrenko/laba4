@@ -1,0 +1,23 @@
+def read_n_lines(this_file):  # Функция read_n_lines создаёт и возвращает функцию reader, которая замыкает значение
+    # this_file из my_file
+    def reader():  # Замыкающая функция
+        line = this_file.readline().strip()  # Считываем текущую строку из файла и помещаем её в переменную line
+        return line
+
+    return reader  # Вызов функции reader (СНАЧАЛА МЫ ОПИСАЛИ ФУНКЦИЮ А ПОТОМ ВЫЗВАЛИ)
+
+
+n = int(input('Введите кол-во строк: '))
+my_file = open('hdime.txt', 'r')
+read_lines = read_n_lines(
+    my_file)  # После вызова функции read_n_lines(my_file) мы получаем функцию read_lines, которая при вызове,
+# всегда отправит наш открытый файл во внешнюю функцию read_n_lines
+for _ in range(n):
+    lines = read_lines()  # Вызываем функцию read_lines(), которая считает текущую строку из файла и записываем
+    # результат в lines
+    if not lines:  # Если мы прочитали строку и там ни оказалось ни одного символа, значит мы прочли файл до конца (
+        # ЛИБО У НАС СТРОКА В КОТОРОЙ НИЧЕГО НЕТ)
+        print('\nДостигнут конец файла')
+        my_file.close()
+        break
+    print(lines)
