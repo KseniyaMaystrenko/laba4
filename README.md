@@ -1,4 +1,4 @@
-![image](https://github.com/KseniyaMaystrenko/laba4/assets/152999073/c9c9ac22-449e-4f95-805a-9d3f043a3369)# laba4
+# laba4
 ## замыкание
 условие:
 
