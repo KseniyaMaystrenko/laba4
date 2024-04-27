@@ -37,5 +37,5 @@
 
 ## используемые материалы
 
-[Работа с декораторами](https://youtu.be/Va-ovLxHmus?feature=shared)
+[Работа с декораторами](https://youtu.be/Va-ovLxHmus?feature=shared) ,
 [Работами с замыканиями](https://youtu.be/lA979PBb0TY?feature=shared)
